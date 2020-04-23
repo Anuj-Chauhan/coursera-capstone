@@ -1,7 +1,7 @@
 # Applied Data Science Capstone Project Report
 
 ## Introduction
-The use case is simple. Our customer has to relocate from Manhattan to Seattle beacuse of job. They love their current residence at 319, Avenue C, New York and were wondering if they could find a similar locality in Seattle.
+The use case is simple. Our customer has to relocate from Manhattan to Seattle beacuse of work. They love their current residence at 319, Avenue C, New York and were wondering if they could find a similar locality in Seattle.
 
 They have a list of areas they are considering in Seattle based on recommendations by friends. 
 
