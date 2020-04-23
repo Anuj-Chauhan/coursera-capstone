@@ -24,3 +24,44 @@ For example, after getting all the nearby attractions of the customer's home we 
 
 When this is repeated for all areas including the ones in Seattle, we get a table like this,  after summing all the attraction categories.
 ![All_areas_attractions](img/2.png)
+
+## Methodology
+
+Since we will be using the [GeoPy](https://geopy.readthedocs.io/en/) library a lot we create a function like below to call it whenever we need the Latitude and Longitude.
+![GeoPy](img/3.png)
+
+### Store your API credentials in a separate file.
+
+We read the Foursquare developer API credentials from a json file and set other parameters required for calling the API.
+
+![FS](imng/4.png)
+
+Now we can call the above API which internally calls the GeoPy function and we are able to aggregate and create a data frame like:
+![All_areas_attractions](img/2.png)
+
+Doing some more analysis we can find some interesting aspects such as the most common category of attraction around a given location.
+![Most_common](img/5.png)
+
+
+We can consolidate this information in a data frame like:
+![df_common](img/6.png)
+
+## Results
+
+After performing K-means clustering we get a cluster belonging to each area. If we take a look at the Seattle region we see:
+![Seattle](img/7.png)
+
+We then check what cluster our home belongs to:
+![NY](img/8.png)
+
+
+## Discussion
+
+The customer not has 3 options to move into: Beacon Hill, Capitol Hill or Lake Union in Seattle. The most common feature in these areas and the users current home include Parks, Ice Cream Shops, Coffee Shops, Bakeries and Cocktail Bars.
+
+## Conclusion
+
+![answer](img/9.png)
+
+We are happy to report that there are 3 areas which are similar to the customer's current address in Manhattan!
+
