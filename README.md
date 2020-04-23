@@ -18,3 +18,9 @@ To achieve this we:
   
  To make things more interesting we will be using the [GeoPy](https://geopy.readthedocs.io/en/) library to find the geographical co-ordinates of all these places and plotting them on a map using [Folium](https://python-visualization.github.io/folium/)!
 
+For example, after getting all the nearby attractions of the customer's home we get a table like this which contains the attraction name and the attraction category.
+![Manhattan Data](img/manh.png)
+
+
+When this is repeated for all areas including the ones in Seattle, we get a table like this,  after summing all the attraction categories.
+![All_areas_attractions](img/2.png)
