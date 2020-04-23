@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Applied Data Science Capstone Project Report
 
-You can use the [editor on GitHub](https://github.com/Anuj-Chauhan/coursera-capstone/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Introduction
+The use case is simple. Our customer has to relocate from Manhattan to Seattle beacuse of job. They love their current residence at 319, Avenue C, New York and were wondering if they could find a similar locality in Seattle.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+They have a list of areas they are considering in Seattle based on recommendations by friends. 
 
-### Markdown
+The goal of this project is to help find our customer areas in Seattle that are similar in terms of attractions nearby to their current residency in Manhattan.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Data
 
-```markdown
-Syntax highlighted code block
+To achieve this we:
+  1. Locate the users home address.
+  2. Find all attractions nearby thir current home using the [FourSquare Developer API](https://developer.foursquare.com/).
+  3. Similarly, find all attractions near each area the user is considering in Seattle.
+  4. Cluster the areas by using unsupervised K-means clustering.
+  5. Find the cluster which contains their current home address and recommend areas similar in Seattle.
+  
+ To make things more interesting we will be using the [GeoPy](https://geopy.readthedocs.io/en/) library to find the geographical co-ordinates of all these places and plotting them on a map using [Folium](https://python-visualization.github.io/folium/)!
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Anuj-Chauhan/coursera-capstone/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
